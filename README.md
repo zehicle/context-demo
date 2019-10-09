@@ -16,8 +16,6 @@ You must install the `docker-context` plugin for this training.  You must also i
 
 Then, create TWO docker containers as follows:
 
-  ::
-
     rm dockerfile
     cp terraform-dockerfile dockerfile
     docker build -t digitalrebar/terraform .
@@ -35,8 +33,6 @@ Install Content
 ---------------
 
 To use this sample code, bundle and upload the content
-
-  ::
 
 	drpcli contents bundle context-demo.yaml
 	drpcli contents upload context-demo.yaml 
