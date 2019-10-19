@@ -16,15 +16,8 @@ You must install the `docker-context` plugin for this training.  You must also i
 
 Then, create TWO docker containers as follows:
 
-    rm dockerfile
-    cp terraform-dockerfile dockerfile
-    docker build -t digitalrebar/terraform .
-
-    rm dockerfile
-    cm runner-dockerfile dockerfile
-    docker build -t digitalrebar/runner .
-
-    rm dockerfile
+    docker build -t digitalrebar/terraform -f terraform-dockerfile .
+    docker build -t digitalrebar/runner -f runner-dockerfile .
 
 After these instructions, Docker will have images that are needed by the runner
 and terraform contexts.
